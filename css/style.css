@@ -1,0 +1,267 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 100%;
+    font-size: 18px;
+}
+
+body {
+    font-family: "Inter", system-ui, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    margin-bottom: 120px;
+    min-height: 100vh;
+    height: 100%;
+    font-size: 1rem;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background: #111827;
+    border-right: 1px solid #1f2937;
+    padding: 30px 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #3b82f6;
+    margin-bottom: 15px;
+}
+
+.profile h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* ===== MENU ===== */
+.menu {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.menu a:hover {
+    background: #1f2937;
+    color: #fff;
+}
+
+.menu a.active {
+    background: #3b82f6;
+    color: white;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    margin-left: 300px;
+    padding: 60px 80px;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+.section {
+    margin-bottom: 120px;
+    padding: 40px;
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
+.section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #9ca3af;
+    max-width: 750px;
+    line-height: 1.8;
+    font-size: 1.15rem;
+}
+
+/* ===== BUTTON ===== */
+.btn-download {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background: #3b82f6;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn-download:hover {
+    transform: translateY(-2px);
+    background: #2563eb;
+}
+
+/* ===== PROJECTS ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #1f2937;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 18px;
+}
+
+.card-body h3 {
+    margin-bottom: 8px;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+}
+
+.card-body a {
+    color: #3b82f6;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+    border-left: 2px solid #3b82f6;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 25px;
+}
+
+.timeline-date {
+    color: #9ca3af;
+    font-size: 1rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+}
+
+.timeline-content p {
+    font-size: 1.05rem;
+}
+
+/* ===== SKILLS ===== */
+.skills-wrapper {
+    margin-top: 40px;
+    max-width: 900px;
+}
+
+.skill-group {
+    margin-bottom: 40px;
+}
+
+.skill-group h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #e5e7eb;
+    border-left: 4px solid #3b82f6;
+    padding-left: 10px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #1f2937;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.skill:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+}
+
+
+/* ===== CONTACT ===== */
+.contact-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1f2937;
+    padding: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+    max-width: 400px;
+    font-size: 1.1rem;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+    background: #374151;
+}
+
+.contact-item img {
+    width: 26px;
+}
+
+.inicio-contacto {
+    margin-top: 160px;
+}
+

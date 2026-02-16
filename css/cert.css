@@ -1,0 +1,43 @@
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    padding: 12px 14px;
+    border-radius: 8px;
+}
+
+.cert-item h3 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.cert-item p {
+    font-size: 1.20rem;
+    color: #9ca3af;
+}
+
+/* Botón chico */
+.btn-cert {
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.2s;
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+
+.btn-cert:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}

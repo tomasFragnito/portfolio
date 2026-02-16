@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/edu.css">
+    <link rel="stylesheet" href="css/cert.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+
+    <nav class="sidebar">
+
+        <div class="profile">
+            <img src="./assets/MyPhoto.png" class="photo">
+            <h4>Tomás Ignacio Fragnito</h4>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#educacion">Educación y Experienca</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+    </nav>
+
+    <main class="content">
+
+        <!-- INICIO -->
+        <section id="inicio" class="section active">
+            <h1>¡ Bienvenido !</h1>
+            <p>
+                Soy técnico en computadoras y estudiante de la Tecnicatura Universitaria en Programación
+                en la Universidad Tecnológica Nacional. Me apasiona la tecnología y el desarrollo web,
+                con experiencia en frontend y backend utilizando JavaScript y Node.js.
+                Me caracterizo por mi enfoque en la resolución de problemas,
+                aprendizaje constante y compromiso con la calidad.
+            </p>
+            <a href="./assets/cv.pdf" download class="btn-download">
+                📄 Descargar CV
+            </a>
+
+            <div class="inicio-contacto">
+                <h1>Contacto</h1>
+                <div class="contact-list">
+
+                    <a class="contact-item" href="mailto:tomignacio2022@gmail.com">
+                        <img src="./assets/email.png" alt="Email">
+                        <span>Email tomignacio2022@email.com</span>
+                    </a>
+
+                    <a class="contact-item" href="https://wa.me/5491139310315" target="_blank">
+                        <img src="./assets/whatsapp.png" alt="WhatsApp">
+                        <span>WhatsApp  +54 11 3931-0315</span>
+                    </a>
+
+                    <a class="contact-item" href="https://www.linkedin.com/in/tomas-ignacio-fragnito-a17261292" target="_blank">
+                        <img src="./assets/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn  in/tomas ignacio fragnito</span>
+                    </a>
+
+                </div>                
+            </div>
+
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="section">
+            <h1>Proyectos</h1>
+            <div class="github">
+                <a class="contact-item" href="https://github.com/tomasFragnito">
+                    <img src="./assets/github.png" alt="Email">
+                    <span>Github tomasFragnito</span>
+                </a>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card" data-img="./assets/nasa.png"
+                    data-title="Web NASA"
+                    data-text="Aplicación que permite consultar fotos de la NASA por fecha y guardarlas en favoritos.">
+                    <img src="./assets/nasa.png" alt="Web NASA">
+                    <div class="card-body">
+                        <h3>Web NASA</h3>
+                        <p>Consulta fotos por fecha con favoritos.</p>
+
+                        <a href="https://nasaweb.onrender.com">Ver proyecto</a>
+                    </div>
+                </div>
+
+                <div class="project-card"
+                    data-img="./assets/infoapp.png"
+                    data-title="Gestor de Informes"
+                    data-text="Aplicación full-stack que permite a los usuarios enviar informes con archivos adjuntos desde un portal cliente.
+                                Incluye un panel administrativo desarrollado en React para visualizar,
+                                descargar y eliminar reportes, con manejo de base de datos. 
+                                Todo orquestado desde un backend realizado en Node.js con Express,
+                                utilizando Sequelize para la gestión de la base de datos y Multer para el manejo de archivos."
+                    data-client="https://infoapp.onrender.com"
+                    data-admin="https://infoappadmin.onrender.com">
+
+                    <img src="./assets/infoapp.png" alt="InfoApp">
+                    <div class="card-body">
+                        <h3>Gestor de Informes</h3>
+                        <p>App full-stack con panel admin.</p>
+                        
+                        <div class="project-links">
+                            <a href="https://infoapp.onrender.com">Ver proyecto - Cliente</a>
+                            <a href="https://infoappadmin.onrender.com">Ver proyecto - Admin</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="educacion" class="section">
+            <h1>Educación y Experiencia</h1>
+
+            <p class="edu-intro">
+                Estudiante de la Tecnicatura Universitaria en Programación con formación técnica en informática,
+                certificaciones CCNA y experiencia brindando soporte IT a empresas desde 2023.
+                Me especializo en resolución de problemas, mantenimiento de sistemas y desarrollo web,
+                combinando experiencia práctica con aprendizaje continuo.
+            </p>
+
+            <div class="timeline">
+
+                    <div class="timeline-item highlight">
+                        <div class="timeline-date">2023 — Actualidad</div>
+                        <div class="timeline-content">
+                            <h3>Tecnicatura en Programación</h3>
+                            <p>UTN — Desarrollo de software, bases de datos y buenas prácticas.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 — Actualidad</div>
+                        <div class="timeline-content">
+                            <h3>Técnico en Servicios IT</h3>
+                            <p>Soporte a empresas, mantenimiento de sistemas e implementación tecnológica.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Certificaciones</div>
+
+                        <div class="cert-list">
+
+                            <div class="cert-item">
+                                <div>
+                                    <h3>Cisco CCNA 1</h3>
+                                    <p>Introduction to Networks.</p>
+                                </div>
+                                <a href="./assets/ccn1.pdf" download class="btn-cert">
+                                    Descargar
+                                </a>
+                            </div>
+
+                            <div class="cert-item">
+                                <div>
+                                    <h3>Cisco CCNA 2</h3>
+                                    <p>Switching Routing and Wireless Essentials.</p>
+                                </div>
+                                <a href="./assets/ccn2.pdf" download class="btn-cert">
+                                    Descargar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+
+        <section id="skills" class="section">
+
+            <h1>Skills</h1>
+
+            <div class="skills-wrapper">
+
+                <div class="skill-group">
+                    <h2>Lenguajes de Programación</h2>
+                    <div class="skills-grid">
+                        <div class="skill">Java</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">Python</div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h2>Frameworks y Librerías</h2>
+                    <div class="skills-grid">
+                        <div class="skill">Node.js</div>
+                        <div class="skill">Spring Boot</div>
+                        <div class="skill">React</div>
+                        <div class="skill">Sequelize</div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h2>Software y Herramientas</h2>
+                    <div class="skills-grid">
+                        <div class="skill">Git</div>
+                        <div class="skill">Linux</div>
+                        <div class="skill">Docker</div>
+                        <div class="skill">Postman</div>
+                        <div class="skill">Visual Studio Code</div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h2>Otros</h2>
+                    <div class="skills-grid">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">SQL</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section">
+            <h1>Contacto</h1>
+
+            <div class="contact-list">
+
+                <a class="contact-item" href="mailto:tomignacio2022@gmail.com">
+                    <img src="./assets/email.png" alt="Email">
+                    <span>Email tomignacio2022@email.com</span>
+                </a>
+
+                <a class="contact-item" href="https://wa.me/5491139310315" target="_blank">
+                    <img src="./assets/whatsapp.png" alt="WhatsApp">
+                    <span>WhatsApp  +54 11 3931-0315</span>
+                </a>
+
+                <a class="contact-item" href="https://www.linkedin.com/in/tomas-ignacio-fragnito-a17261292" target="_blank">
+                    <img src="./assets/linkedin.png" alt="LinkedIn">
+                    <span>LinkedIn  in/tomas ignacio fragnito</span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <img id="modalImg" src="" alt="Proyecto">
+
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+
+            <div id="modalLinks"></div>
+
+        </div>
+    </div>
+
+    <script src="script/app.js"></script>
+    <script src="script/modal.js"></script>
+
+</body>
+</html>

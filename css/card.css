@@ -1,0 +1,12 @@
+
+/* IMAGEN */
+.project-card img {
+    object-fit: contain;
+    background: #111;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
