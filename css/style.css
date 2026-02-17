@@ -9,17 +9,26 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     height: 100%;
-    font-size: 18px;
+    font-size: 14px; /* reducido para que la letra entre en pantalla */
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "Inter", system-ui, sans-serif;
     background: #0f172a;
     color: #e5e7eb;
     margin-bottom: 120px;
     min-height: 100vh;
     height: 100%;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+main.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ===== SIDEBAR ===== */
@@ -48,7 +57,7 @@ body {
 }
 
 .profile h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -65,6 +74,7 @@ body {
     color: #9ca3af;
     text-decoration: none;
     font-weight: 500;
+    font-size: 0.85rem;
     transition: all 0.2s;
 }
 
@@ -94,26 +104,27 @@ body {
 }
 
 .section h1 {
-    font-size: 2.8rem;
+    font-size: 2rem; /* reducido para adaptarse */
     margin-bottom: 20px;
 }
 
 .section p {
     color: #9ca3af;
     max-width: 750px;
-    line-height: 1.8;
-    font-size: 1.15rem;
+    line-height: 1.6;
+    font-size: 0.9rem;
 }
 
 /* ===== BUTTON ===== */
 .btn-download {
     display: inline-block;
     margin-top: 25px;
-    padding: 12px 22px;
+    padding: 10px 18px;
     background: #3b82f6;
     border-radius: 8px;
     color: white;
     text-decoration: none;
+    font-size: 0.85rem;
     transition: 0.25s;
 }
 
@@ -125,9 +136,9 @@ body {
 /* ===== PROJECTS ===== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 25px;
 }
 
 .project-card {
@@ -145,81 +156,82 @@ body {
 
 .project-card img {
     width: 100%;
-    height: 180px;
+    height: 160px;
     object-fit: cover;
 }
 
 .card-body {
-    padding: 18px;
+    padding: 16px;
 }
 
 .card-body h3 {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+    font-size: 1rem;
 }
 
 .card-body p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .card-body a {
     color: #3b82f6;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-decoration: none;
 }
 
 /* ===== TIMELINE ===== */
 .timeline {
     border-left: 2px solid #3b82f6;
-    margin-top: 30px;
-    padding-left: 20px;
+    margin-top: 25px;
+    padding-left: 18px;
 }
 
 .timeline-item {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .timeline-date {
     color: #9ca3af;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .timeline-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .timeline-content p {
-    font-size: 1.05rem;
+    font-size: 0.85rem;
 }
 
 /* ===== SKILLS ===== */
 .skills-wrapper {
-    margin-top: 40px;
-    max-width: 900px;
+    margin-top: 35px;
+    max-width: 850px;
 }
 
 .skill-group {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .skill-group h2 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
     color: #e5e7eb;
     border-left: 4px solid #3b82f6;
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
 }
 
 .skill {
     background: #1f2937;
-    padding: 12px 20px;
+    padding: 10px 16px;
     border-radius: 999px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: 0.2s ease;
 }
@@ -228,7 +240,6 @@ body {
     background: #3b82f6;
     transform: translateY(-2px);
 }
-
 
 /* ===== CONTACT ===== */
 .contact-list {
@@ -249,7 +260,7 @@ body {
     color: white;
     transition: 0.2s;
     max-width: 400px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .contact-item:hover {
@@ -258,10 +269,9 @@ body {
 }
 
 .contact-item img {
-    width: 26px;
+    width: 24px;
 }
 
 .inicio-contacto {
-    margin-top: 160px;
+    margin-top: 120px;
 }
-

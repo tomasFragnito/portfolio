@@ -1,3 +1,94 @@
+/* ===== EDUCACION - SECCION COMPLETA EN PANTALLA ===== */
+#educacion {
+    padding: 20px 30px;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+#educacion h1 {
+    font-size: 1.8rem; 
+    margin-bottom: 12px;
+}
+
+#educacion .edu-intro {
+    font-size: 1rem;
+    max-width: 600px;
+    line-height: 1.4;
+    color: #cbd5e1;
+}
+
+#educacion .timeline {
+    border-left: 2px solid #3b82f6;
+    padding-left: 15px;
+    margin-top: 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#educacion .timeline-item {
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+#educacion .timeline-item.highlight {
+    border: 1px solid #3b82f6;
+    box-shadow: 0 0 12px rgba(59,130,246,0.15);
+}
+
+#educacion .timeline-date {
+    font-size: 1rem;
+    color: #9ca3af;
+    margin-bottom: 2px;
+}
+
+#educacion .timeline-content h3 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+#educacion .timeline-content p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+/* CERTIFICADOS */
+#educacion .cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+#educacion .cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+#educacion .cert-item h3 {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+#educacion .cert-item p {
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+#educacion .btn-cert {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+}
+
+
 .edu-intro {
     margin-top: 15px;
     margin-bottom: 40px;

@@ -1,4 +1,4 @@
-/* MODAL */
+/* ===== MODAL ===== */
 .modal {
     display: none;
     position: fixed;
@@ -7,60 +7,67 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.85);
     justify-content: center;
     align-items: center;
+    padding: 20px; /* margen para que no toque los bordes */
 }
 
-/* CONTENIDO */
+/* ===== CONTENIDO ===== */
 .modal-content {
     background: #1e1e1e;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 90%;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;              /* ocupa hasta 90% del ancho de la pantalla */
+    max-width: 600px;         /* ancho máximo fijo */
+    max-height: 90vh;         /* altura máxima 90% de la ventana */
+    overflow: hidden;         /* evita scroll externo */
     text-align: center;
     color: white;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* ===== IMAGEN ===== */
 .modal-content img {
-    width: 100%;
+    max-width: 100%;          /* nunca se pasa del ancho del modal */
+    max-height: 50vh;         /* ocupa como máximo la mitad de la pantalla */
+    height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
+    object-fit: contain;      /* escala sin cortar */
 }
 
-/* BOTON CERRAR */
+/* ===== BOTON CERRAR ===== */
 .close {
     position: absolute;
     right: 15px;
     top: 10px;
     font-size: 28px;
+    font-weight: bold;
     cursor: pointer;
+    color: #fff;
 }
 
-.project-card {
-    cursor: pointer;
-}
-
-.project-card:active {
-    transform: scale(0.98);
-}
-
+/* ===== LINKS DEL MODAL ===== */
 #modalLinks {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 #modalLinks a {
     background: #3b82f6;
-    padding: 8px 14px;
+    padding: 10px 16px;
     border-radius: 6px;
     color: white;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 500;
     transition: 0.2s;
     text-align: center;
 }
@@ -68,5 +75,3 @@
 #modalLinks a:hover {
     background: #2563eb;
 }
-
-
