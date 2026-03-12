@@ -19,8 +19,8 @@
     padding: 20px;
     border-radius: 12px;
     width: 90%;              /* ocupa hasta 90% del ancho de la pantalla */
-    max-width: 600px;         /* ancho máximo fijo */
-    max-height: 90vh;         /* altura máxima 90% de la ventana */
+    max-width: 400px;         /* ancho máximo fijo */
+    max-height: 60vh;         /* altura máxima 90% de la ventana */
     overflow: hidden;         /* evita scroll externo */
     text-align: center;
     color: white;
